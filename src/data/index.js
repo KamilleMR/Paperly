@@ -40,7 +40,7 @@ export const products = [
   },
   {
     id: '3',
-    name: 'Planner Anual 2025',
+    name: 'Planner Anual 2026',
     brand: 'Paperly Original',
     price: 119.90,
     originalPrice: null,
@@ -103,7 +103,7 @@ export const products = [
 export const banners = [
   {
     id: '1',
-    title: 'Nova Coleção\nOutono 2025',
+    title: 'Nova Coleção\nOutono 2026',
     subtitle: 'Papelaria que inspira',
     cta: 'Explorar',
     bg: '#1A1A2E',

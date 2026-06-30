@@ -42,7 +42,7 @@ export default function HomeScreen({ navigation }) {
 
         const produtosFormatados = dadosBrutos.map(item => {
           const nomeLower = item.nome ? item.nome.toLowerCase() : itemBanco.nome.toLowerCase();
-          let catDinamica = 'Cadernos'; // Categoria padrão
+          let catDinamica = 'Cadernos';
           
           if (nomeLower.includes('caneta') || nomeLower.includes('lápis') || nomeLower.includes('grafite')) {
             catDinamica = 'Canetas';
@@ -51,9 +51,9 @@ export default function HomeScreen({ navigation }) {
           } else if (nomeLower.includes('adesivo') || nomeLower.includes('sticker')) {
             catDinamica = 'Adesivos';
           } else if (nomeLower.includes('marcador') || nomeLower.includes('marca texto')) {
-            catDinamica = 'Marcadores'; // <-- Nova categoria independente!
+            catDinamica = 'Marcadores';
           } else if (nomeLower.includes('pasta') || nomeLower.includes('fichário') || nomeLower.includes('arquivo')) {
-            catDinamica = 'Pastas'; // <-- Nova categoria independente!
+            catDinamica = 'Pastas'; 
           }
           
           return {
@@ -66,7 +66,7 @@ export default function HomeScreen({ navigation }) {
             stock: 10,
             inStock: true,
             countInStock: 10,
-            category: catDinamica // Mágica aqui também!
+            category: catDinamica
           };
         });
 
